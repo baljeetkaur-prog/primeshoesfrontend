@@ -1,0 +1,172 @@
+/* Container now spans full width */
+.returns-container {
+  width: 100%;
+  padding: 30px 0;
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Table spans full width */
+.returns-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.returns-table th,
+.returns-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.returns-table th {
+  background-color: #ca1515;
+  color: white;
+}
+
+.returns-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.admin-users-title {
+  color: #111111;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  padding-left: 15px;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination-button {
+  background-color: #fff;
+  color: #ca1515;
+  border: 1px solid #ca1515;
+  padding: 6px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.pagination-button.active,
+.pagination-button:hover {
+  background-color: #ca1515;
+  color: white;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 15px;
+}
+
+.filter-controls label {
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-controls button {
+  background-color: #ca1515;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-controls button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .returns-container {
+    padding: 20px 0;
+  }
+
+  .returns-table th,
+  .returns-table td {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .admin-users-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin: 20px 15px;
+  }
+
+  .filter-controls input,
+  .filter-controls select,
+  .filter-controls button {
+    width: 100%;
+  }
+
+  .pagination-button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .returns-container {
+    padding: 15px 0;
+  }
+
+  .returns-table {
+    font-size: 12px;
+  }
+
+  .returns-table th,
+  .returns-table td {
+    padding: 6px 8px;
+  }
+
+  .pagination-button {
+    margin: 2px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .admin-users-title {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .returns-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

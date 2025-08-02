@@ -1,0 +1,253 @@
+.image-layout-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.vertical-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.thumb-img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product__big__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: transparent;
+}
+/* Swiper custom arrows */
+/* Swiper custom arrows - small, black, rounded on white */
+.custom-product-swiper .swiper-button-prev,
+.custom-product-swiper .swiper-button-next {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-product-swiper .swiper-button-prev::after,
+.custom-product-swiper .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Remove pagination dots */
+.custom-product-swiper .swiper-pagination {
+  display: none !important;
+}
+.pro-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pro-qty input {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  border: none;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 0;
+  background: none;      /* No background */
+  color: inherit;        /* Inherit text color from parent */
+  cursor: pointer;
+}
+/* Make product detail section tighter */
+.product-compact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 25px;
+}
+
+/* Reduce vertical gaps */
+.product-compact .product__details__text h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.product-compact .product__details__text span {
+  font-size: 14px;
+}
+
+.product-compact .product__details__price {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.product-compact .rating i {
+  font-size: 14px;
+}
+
+.product-compact .promo-code-info {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+/* Compact description */
+.product-compact .product__details__description {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+/* Quantity */
+.product-compact .pro-qty input {
+  width: 45px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.product-compact .qty-btn {
+  width: 28px;
+  height: 32px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.product-compact .cart-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* Widget area */
+.product-compact .product__details__widget {
+  margin-top: 16px;
+}
+
+.product-compact .product__details__widget li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* Tabs */
+.product-compact .product__details__tab .nav-tabs .nav-link {
+  padding: 6px 14px;
+  font-size: 18px;
+}
+
+.product-compact .tab-content {
+  padding-top: 10px;
+}
+
+/* Review section */
+.product-compact .single-review {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Related products spacing still preserved */
+.product__details__text {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.product__details__price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ca1515;
+  margin: 12px 0;
+}
+
+.product__details__price span {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.rating i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.rating span {
+  font-size: 14px;
+  color: #777;
+  margin-left: 6px;
+}
+
+.product__details__description {
+  font-size: 14px;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.pro-qty {
+  border: 1px solid #ddd;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 30px;
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+
+.color-options label,
+.size-options label {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.color-options label.active,
+.size-options label.active {
+  background-color: #ca1515;
+  color: #fff;
+  font-weight: 600;
+  border-color: #ca1515;
+}
+
+
+
+
+
+
+

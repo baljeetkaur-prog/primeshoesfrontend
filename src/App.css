@@ -1,0 +1,26 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@media (max-width: 576px) {
+  .Toastify__toast {
+    min-height: 40px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .Toastify__toast-container {
+    width: 90% !important;
+    left: 5% !important;
+    right: 5% !important;
+  }
+
+  .Toastify__toast-body {
+    font-size: 13px;
+  }
+
+  .Toastify__close-button {
+    font-size: 14px;
+  }
+}
+
+
+

@@ -1,0 +1,515 @@
+/* Orders.css */
+
+/* Scrollable table on small devices */
+.responsive-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Product info layout adjusts on smaller screens */
+.order-product-info {
+  gap: 12px;
+}
+
+
+.rate-btn-table:hover {
+  background-color: #a21010;
+  transform: translateY(-1px);
+}
+
+/* Rate Product Button - Mobile View */
+.rate-btn-mobile {
+  background-color: #ca1515;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.rate-btn-mobile:hover {
+  background-color: #a21010;
+}
+
+/* Order Status Badge */
+.order-status-badge {
+  background-color: #f3f4f6;
+  color: #ca1515;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #ca1515;
+  border-radius: 20px;
+  padding: 4px 10px;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+/* Keep text white on all link states */
+.rate-btn-table:link,
+.rate-btn-table:visited,
+.rate-btn-table:active,
+.rate-btn-table:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+.rate-btn-table:hover {
+  background-color: #a21010;
+  transform: translateY(-1px);
+}
+
+.rate-btn-table.disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.mobile-status-badge {
+  background-color: #ca1515;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+/* Mobile & general: Rate Product Button */
+.rate-btn,
+.rate-btn-mobile {
+  background-color: #ca1515;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.rate-btn:hover,
+.rate-btn-mobile:hover {
+  background-color: #a21010;
+  transform: translateY(-1px);
+}
+
+.rate-btn.disabled,
+.rate-btn-mobile.disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .order-product-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .order-product-info img {
+    width: 100% !important;
+    max-width: 100px;
+    height: auto !important;
+    margin-bottom: 8px;
+  }
+
+  .orders-table td,
+  .orders-table th {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  .pagination-btn {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Badge styling */
+.orders-table .badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Table formatting */
+.orders-table {
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.orders-table th {
+  background-color: #f8f8f8;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td,
+.orders-table th {
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+/* Pagination */
+.product__pagination .pagination-btn {
+  transition: all 0.3s ease;
+}
+
+.product__pagination .pagination-btn:hover {
+  background-color: #ca1515 !important;
+  color: #fff !important;
+}
+/* Orders.css */
+
+/* Hide table view and show card view on small screens */
+@media (max-width: 768px) {
+  .orders-table {
+    display: none;
+  }
+
+  .order-card {
+    display: block;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .order-card-header {
+    font-weight: bold;
+    color: #ca1515;
+    margin-bottom: 10px;
+  }
+
+  .order-card-product {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .order-card-product img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 12px;
+  }
+
+  .order-card-product-details {
+    font-size: 14px;
+  }
+
+  .order-card-footer {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .order-card-footer div {
+    margin-bottom: 6px;
+  }
+}
+/* Unified Rate Button Styles for Mobile & Desktop */
+.rate-btn,
+.rate-btn-mobile,
+.rate-btn-table {
+  background-color: #ca1515;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  margin-top: 10px;
+  -webkit-tap-highlight-color: transparent; /* ✅ Remove blue on mobile tap */
+}
+
+/* Hover Effects */
+.rate-btn:hover,
+.rate-btn-mobile:hover,
+.rate-btn-table:hover {
+  background-color: #a21010;
+  transform: translateY(-1px);
+}
+
+/* Active/Focus State Fix */
+.rate-btn:link,
+.rate-btn:visited,
+.rate-btn:focus,
+.rate-btn:active,
+.rate-btn-mobile:link,
+.rate-btn-mobile:visited,
+.rate-btn-mobile:focus,
+.rate-btn-mobile:active,
+.rate-btn-table:link,
+.rate-btn-table:visited,
+.rate-btn-table:focus,
+.rate-btn-table:active {
+  color: #fff !important;        /* ✅ Always white text */
+  text-decoration: none !important;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Disabled State */
+.rate-btn.disabled,
+.rate-btn-mobile.disabled,
+.rate-btn-table.disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.rate-btn-table, .rate-btn-mobile {
+  background-color: #ca1515;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.rate-btn-table.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.rate-btn-table,
+.cancel-btn-table,
+.return-btn-table {
+  background-color: #ca1515;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 3px 0;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.rate-btn-table:hover,
+.cancel-btn-table:hover,
+.return-btn-table:hover {
+  background-color: #a71111;
+  color: white;
+}
+
+.rate-btn-table.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile versions */
+.rate-btn-mobile,
+.cancel-btn-mobile,
+.return-btn-mobile {
+  background-color: #ca1515;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.rate-btn-mobile:hover,
+.cancel-btn-mobile:hover,
+.return-btn-mobile:hover {
+  background-color: #a71111;
+}
+/* === Shared Button Styles === */
+.rate-btn-table,
+.cancel-btn-table,
+.return-btn-table,
+.rate-btn-mobile,
+.cancel-btn-mobile,
+.return-btn-mobile,
+.rate-btn {
+  background-color: #ca1515;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* === Hover Effect === */
+.rate-btn-table:hover,
+.cancel-btn-table:hover,
+.return-btn-table:hover,
+.rate-btn-mobile:hover,
+.cancel-btn-mobile:hover,
+.return-btn-mobile:hover,
+.rate-btn:hover {
+  background-color: #a21010;
+  transform: translateY(-1px);
+}
+
+/* === Disabled State === */
+.rate-btn-table.disabled,
+.cancel-btn-table.disabled,
+.return-btn-table.disabled,
+.rate-btn-mobile.disabled,
+.cancel-btn-mobile.disabled,
+.return-btn-mobile.disabled,
+.rate-btn.disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* === Link States (no underline, always white) === */
+.rate-btn-table:link,
+.cancel-btn-table:link,
+.return-btn-table:link,
+.rate-btn-mobile:link,
+.cancel-btn-mobile:link,
+.return-btn-mobile:link,
+.rate-btn:link,
+.rate-btn-table:visited,
+.cancel-btn-table:visited,
+.return-btn-table:visited,
+.rate-btn-mobile:visited,
+.cancel-btn-mobile:visited,
+.return-btn-mobile:visited,
+.rate-btn:visited,
+.rate-btn-table:active,
+.cancel-btn-table:active,
+.return-btn-table:active,
+.rate-btn-mobile:active,
+.cancel-btn-mobile:active,
+.return-btn-mobile:active,
+.rate-btn:active,
+.rate-btn-table:focus,
+.cancel-btn-table:focus,
+.return-btn-table:focus,
+.rate-btn-mobile:focus,
+.cancel-btn-mobile:focus,
+.return-btn-mobile:focus,
+.rate-btn:focus {
+  color: white !important;
+  text-decoration: none !important;
+  outline: none;
+  box-shadow: none;
+}
+.mobile-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.mobile-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 20px;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+.mobile-modal h5 {
+  margin-bottom: 10px;
+  color: #ca1515;
+}
+
+.mobile-modal textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn,
+.confirm-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #f0f0f0;
+}
+
+.confirm-btn {
+  background: #ca1515;
+  color: #fff;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+

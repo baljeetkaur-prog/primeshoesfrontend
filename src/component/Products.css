@@ -1,0 +1,118 @@
+/* Ensure higher specificity using :global selector or specificity override */
+
+/* Slider track */
+div.price-range.noUi-target {
+  background: #ebebeb !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 2px !important;
+  border-radius: 30px !important;
+  margin-top: 10px;
+}
+
+/* Filled part of the slider */
+div.price-range .noUi-connect {
+  background: #ca1515 !important;
+}
+
+/* Slider handles (small red dots) */
+div.price-range .noUi-handle {
+  background: #ca1515 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+  height: 10px !important;
+  width: 10px !important;
+  top: -4px !important;
+  right: -3px !important;
+  cursor: pointer;
+}
+div.price-range .noUi-handle::before,
+div.price-range .noUi-handle::after {
+  display: none !important;
+  content: none !important;
+}
+.pagination__option a.active {
+  background-color: #ca1515;
+  color: white;
+}
+@media (max-width: 575.98px) {
+  .col-lg-4.col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* Optional spacing adjustment for small devices */
+@media (max-width: 575.98px) {
+  .product__item {
+    margin-bottom: 20px;
+  }
+}
+/* Filter Toggle Button for Mobile */
+.filter-toggle {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background-color: #ca1515;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+}
+
+/* Drawer Overlay */
+.filter-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2000;
+}
+
+/* Drawer Panel */
+.filter-drawer {
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2001;
+  transition: transform 0.3s ease;
+}
+
+/* Close Button */
+.close-filter {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .filter-toggle {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .shop__sidebar-desktop {
+    display: none;
+  }
+}
+
+/* Hide mobile drawer on desktop */
+@media (min-width: 993px) {
+  .shop__sidebar-mobile {
+    display: none;
+  }
+}
